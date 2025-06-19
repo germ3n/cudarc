@@ -11,7 +11,7 @@ use std::{marker::PhantomData, sync::Arc};
 #[derive(Debug)]
 pub struct Cudnn {
     pub(crate) handle: sys::cudnnHandle_t,
-    pub(crate) stream: Arc<CudaStream>,
+    pub stream: Arc<CudaStream>,
 }
 
 impl Cudnn {
